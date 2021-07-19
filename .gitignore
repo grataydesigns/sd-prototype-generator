@@ -1,6 +1,7 @@
 .vscode
 public
 node_modules
+src/components/prototype.nunjucks
 src/tokens/tokens.scss
 src/data/icons.json
 src/data/tokens.json
