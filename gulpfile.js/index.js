@@ -31,7 +31,7 @@ exports.concatenateMacros = concatenateMacros;
 exports.iconSprite = iconSprite;
 exports.generateIconDataFile = generateIconDataFile;
 
-exports.buid = series(
+exports.build = series(
   clean,
   compilejs,
   iconSprite,
