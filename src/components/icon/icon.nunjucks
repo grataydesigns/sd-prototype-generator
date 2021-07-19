@@ -1,0 +1,7 @@
+{% macro icon(name = 'menu', class = false) %}
+    <svg class="sd-icon{{ ' ' + class if class }}">
+        <use xlink:href="/icons/icons.svg#{{name}}">
+          <title>{{ name }}</title>
+        </use>
+    </svg>
+{% endmacro %}

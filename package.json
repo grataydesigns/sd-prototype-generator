@@ -1,0 +1,39 @@
+{
+  "name": "scalabledesign-prototypes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:tasks": "gulp --gulpfile gulpfile.js",
+    "watch:tokens": "chokidar \"src/tokens/**/*.js\" -c \"gulp tokens\"",
+    "dev": "concurrently --kill-others-on-fail \"npm run dev:tasks\" \"npm run watch:tokens\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.5",
+    "browser-sync": "^2.26.14",
+    "chokidar-cli": "^2.1.0",
+    "chroma-js": "^2.1.2",
+    "concurrently": "^6.2.0",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat-util": "^0.5.5",
+    "gulp-data": "^1.3.1",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "gulp-svgmin": "^3.0.0",
+    "gulp-svgstore": "^7.0.1",
+    "gulp-uglify": "^3.0.2",
+    "style-dictionary": "^3.0.1"
+  },
+  "dependencies": {
+    "nunjucks": "^3.2.3"
+  }
+}

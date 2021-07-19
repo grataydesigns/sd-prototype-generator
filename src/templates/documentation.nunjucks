@@ -1,0 +1,26 @@
+{% extends "base.nunjucks" %}
+
+{% block body %}
+  <div class="sd-docs__container">
+    <main>
+      <header class="sd-docs__header">
+        <h1 class="sd-heading-level-1">{{page_title}}</h1>
+      </header>
+      <article class="sd-docs__content">
+        <header class="sd-docs__content-header">
+          {% block page_intro %}{% endblock %}
+        </header>
+        {% block page_content %}{% endblock %}
+      </article>
+    </main>
+    <aside>
+      <a href="/" class="sd-docs__link--home">
+        <div class="sd-logo">
+          <span class="sd-logo__text">Scalable</span>
+          <span class="sd-logo__icon">DS</span>
+        </div>
+      </a>
+    </aside>
+  </div>
+
+{% endblock %}

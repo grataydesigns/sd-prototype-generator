@@ -1,0 +1,40 @@
+.#{$prefix}-table {
+  background: $color-background-white;
+  border: $border-component-on-light;
+  border-collapse: collapse;
+  border-radius: $border-radius-default;
+  box-shadow: $box-shadow-1;
+  table-layout: fixed;
+  width: 100%;
+
+  th {
+    @include sd-text-md($font-weight: $font-weight-medium);
+    background-color: $color-background-neutral;
+    text-align: left;
+  }
+
+  th,
+  td {
+    border-bottom: $border-component-on-light;
+    padding: $size-space-inset-md;
+  }
+
+  td {
+    @include sd-text-md($font-weight: $font-weight-regular);
+
+    .#{$prefix}-icon {
+      position: relative;
+      top: $size-xs;
+    }
+
+    .#{$prefix}-icon--sm {
+      top: $size-xxs;
+    }
+  }
+
+  tr:last-child {
+    td {
+      border-bottom: none;
+    }
+  }
+}

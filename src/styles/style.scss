@@ -1,0 +1,17 @@
+// Global styles
+@import '../tokens/tokens';
+@import './shared/utils';
+@import './shared/global';
+@import './shared/typography';
+@import './shared/layout';
+@import './shared/logo';
+
+// Design system documentation pages
+@import './shared/docs';
+
+// Design system components
+@import '../components/reference_table/reference_table';
+
+// Prototype components
+@import '../components/header/header';
+@import '../components/icon/icon';

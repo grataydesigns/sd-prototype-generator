@@ -1,0 +1,19 @@
+{% import "prototype.nunjucks" as component with context %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    {% block head_prepend %}{% endblock head_prepend %}
+    <link rel="stylesheet" href="/styles/style.css">
+    {% block head_append %}{% endblock head_append %}
+  </head>
+  <body>
+    {% block body %}{% endblock body %}
+    {{ component.footer() }}
+    <script src="/scripts/app.js"></script>
+    {% block closing_body_assets %}{% endblock closing_body_assets %}
+  </body>
+</html>

@@ -1,0 +1,23 @@
+@mixin icon-size($size) {
+  $size-token: map-deep-get($tokens, size, icon, $size);
+  height: $size-token;
+  width: $size-token;
+}
+
+.#{$prefix}-icon {
+  @include icon-size('md');
+  background-color: transparent;
+  fill: $color-icon-default;
+
+  &:hover {
+    fill: $color-icon-hover;
+  }
+}
+
+$size-tokens: map-deep-get($tokens, size, icon);
+
+@each $size-key, $value in $size-tokens {
+  .#{$prefix}-icon--#{$size-key} {
+    @include icon-size($size-key);
+  }
+}

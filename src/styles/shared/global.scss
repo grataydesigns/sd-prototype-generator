@@ -1,0 +1,62 @@
+/* Enable smooth scroll */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  @include box-sizing;
+  background-color: $color-neutral-10;
+  color: $color-text-primary-on-light;
+  font-family: $font-family-sans-serif;
+  line-height: $font-line-height-body;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+  text-rendering: optimizeSpeed;
+}
+
+/* Remove list styles only when list have the role attribute set */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Improve link underlines for links without a class attribute  */
+a:not([class]) {
+  color: $color-link-default;
+  text-decoration-skip-ink: auto;
+
+  &:hover {
+    color: $color-link-hover;
+  }
+}
+
+/* Set fluid images */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Set font inherit on input images */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}

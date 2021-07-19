@@ -1,0 +1,8 @@
+{% macro footer(args) %}
+    <footer>
+        <div class="sd-container">
+            &copy;
+            {{ copyright }}
+        </div>
+    </footer>
+{% endmacro %}

@@ -1,0 +1,16 @@
+.#{$prefix}-logo {
+  font-weight: 700;
+}
+
+.#{$prefix}-logo__text {
+  font-size: $size-font-heading-sm;
+}
+
+.#{$prefix}-logo__icon {
+  background-color: $color-primary-default;
+  border-radius: $border-radius-default;
+  color: $color-text-primary-on-dark;
+  display: inline-block;
+  font-size: $size-font-text-md;
+  padding: $size-xxs $size-xxs 0;
+}

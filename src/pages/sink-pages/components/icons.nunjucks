@@ -1,0 +1,28 @@
+{% extends "sink.nunjucks" %}
+
+{% block content %}
+  <p><a href="/visual-language/icons.html">Icons documentation</a></p>
+  <h1 class="sink-page-header">Icons</h1>
+  <section>
+    <h2 class="sink-page-header">Small Icons</h2>
+    {% for icon in icons %}
+      {{ component.icon(name=icon, class='sd-icon--sm') }}
+    {% endfor %}
+  </section>
+
+  <section>
+    <h2 class="sink-page-header">Medium Icons</h2>
+    {% for icon in icons %}
+      {{ component.icon(name=icon) }}
+    {% endfor %}
+  </section>
+
+  <section>
+    <h2 class="sink-page-header">Large Icons</h2>
+    {% for icon in icons %}
+      {{ component.icon(name=icon, class='sd-icon--lg') }}
+    {% endfor %}
+  </section>
+
+
+{% endblock %}

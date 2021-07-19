@@ -1,0 +1,48 @@
+<div class="sd-container">
+  <h1>{{title}}</h1>
+    <div class="row">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </div>
+    <div class="row">
+        <div class="box col-2">1</div>
+        <div class="box col-2">2</div>
+        <div class="box col-2">3</div>
+        <div class="box col-2">4</div>
+        <div class="box col-2">5</div>
+        <div class="box col-2">6</div>
+    </div>
+    <div class="row">
+        <div class="box col-3">1</div>
+        <div class="box col-3">2</div>
+        <div class="box col-3">3</div>
+        <div class="box col-3">4</div>
+    </div>
+    <div class="row">
+        <div class="box col-4">1</div>
+        <div class="box col-4">2</div>
+        <div class="box col-4">3</div>
+    </div>
+    <div class="row">
+        <div class="box col-6">1</div>
+        <div class="box col-6">2</div>
+    </div>
+    <div class="row">
+        <div class="box col-12">1</div>
+    </div>
+    <div class="row">
+        <div class="box col-1">1</div>
+        <div class="box col-11">11</div>
+        <div class="box col-11">11</div>
+        <div class="box col-1">1</div>
+    </div>

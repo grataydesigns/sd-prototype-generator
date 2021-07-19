@@ -1,0 +1,21 @@
+{% extends "base.nunjucks" %}
+
+{% block head_append %}
+    <style>
+      .sink-page-container {
+        padding: {{ tokens.size.space.inset.sm }}
+      }
+      .sink-page-header {
+        margin: {{ tokens.size.space.stack.lg }};
+      }
+      section {
+        margin: {{ tokens.size.space.stack.xl }}
+      }
+    </style>
+{% endblock %}
+
+{% block body %}
+  <main class="sink-page-container">
+    {% block content %}{% endblock %}
+  </main>
+{% endblock %}

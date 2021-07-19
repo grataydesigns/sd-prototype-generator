@@ -1,0 +1,43 @@
+@mixin sd-text-sm($font-weight: $font-weight-regular) {
+  font-size: $size-font-text-sm;
+  font-weight: $font-weight;
+  line-height: 1;
+}
+
+@mixin sd-text-md($font-weight: $font-weight-regular) {
+  font-size: $size-font-text-md;
+  font-weight: $font-weight;
+  line-height: 1.25;
+}
+
+@mixin sd-text-lg($font-weight: $font-weight-regular) {
+  font-size: $size-font-text-lg;
+  font-weight: $font-weight;
+  line-height: 1.5;
+}
+
+@mixin sd-heading-level-1($font-weight: $font-weight-medium) {
+  font-size: $size-font-heading-lg;
+  font-weight: $font-weight;
+  line-height: 2.75;
+}
+
+@mixin sd-heading-level-2($font-weight: $font-weight-medium) {
+  font-size: $size-font-heading-md;
+  font-weight: $font-weight;
+  line-height: 2.25;
+}
+
+@mixin sd-heading-level-3($font-weight: $font-weight-medium) {
+  font-size: $size-font-heading-sm;
+  font-weight: $font-weight;
+  line-height: 1.75;
+}
+
+.#{$prefix}-heading-level-1 {
+  @include sd-heading-level-1;
+}
+
+.#{$prefix}-heading-level-2 {
+  @include sd-heading-level-2;
+}

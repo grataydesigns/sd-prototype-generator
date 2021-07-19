@@ -1,0 +1,6 @@
+.vscode
+public
+node_modules
+src/tokens/tokens.scss
+src/data/icons.json
+src/data/tokens.json

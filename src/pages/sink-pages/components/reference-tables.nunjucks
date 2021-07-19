@@ -1,0 +1,40 @@
+{% extends "sink.nunjucks" %}
+
+{% block content %}
+  <h1 class="sink-page-header">Reference Tables Sink</h1>
+  <h2 class="sink-page-header">Default Reference Table</h2>
+
+{% set headers = [
+    { name: 'Name' },
+    { value: 'Value' },
+    { usage: 'Usage' }
+  ]
+%}
+
+{% set data = [
+    {
+      name: 'Icon S',
+      value: '16px' + component.icon(name="bell", class="sd-icon--sm"),
+      usage: 'buttons, dropdowns, inputs, accordions, select, tooltip triggers'
+    },
+    {
+      name: 'Icon M',
+      value: '20px' + component.icon(name="bell", class="sd-icon--md"),
+      usage: 'icon buttons, menu items, close (‘x’) icons'
+    },
+    {
+      name: 'Icon L',
+      value: '24px' + component.icon(name="bell", class="sd-icon--lg"),
+      usage: 'notifications'
+    }
+  ]
+%}
+
+{{ component.table(
+    headers=headers,
+    data=data,
+    column_widths=[33, 33, 33]
+  )
+}}
+
+{% endblock %}

@@ -1,0 +1,46 @@
+// Documentation page layout
+
+.#{$prefix}-docs__container {
+  display: flex;
+
+  aside {
+    background-color: $color-background-neutral;
+    flex-basis: 15.5rem;
+    order: 1;
+    padding: $size-space-inset-lg;
+  }
+
+  main {
+    flex: 1;
+    order: 2;
+  }
+}
+
+// Documentation styles
+
+.#{$prefix}-docs__header {
+  background-color: $color-neutral-100;
+  color: $color-text-primary-on-dark;
+  padding: $size-6xl $size-xxl $size-lg;
+}
+
+.#{$prefix}-docs__content {
+  padding: $size-space-inset-xxl;
+  max-width: 68.5rem;
+
+  h2,
+  h3,
+  h4,
+  p {
+    margin: $size-space-stack-lg;
+  }
+}
+
+.#{$prefix}-docs__content-header {
+  margin: $size-space-stack-lg;
+}
+
+.#{$prefix}-docs__link--home {
+  text-decoration: none;
+  color: $color-neutral-90;
+}

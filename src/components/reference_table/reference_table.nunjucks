@@ -1,0 +1,30 @@
+{% macro table(class, headers, data, column_widths) %}
+  <table class="sd-table">
+    <thead>
+      <tr>
+        {% for header in headers %}
+          <th {% if column_widths %}
+            style="width: {{ column_widths[loop.index0] }}%"
+          {% endif %}>
+            {% for key, label in header %}
+              {{ label }}
+            {% endfor %}
+          </th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for data_row in data %}
+        <tr>
+          {% for header_data in headers %}
+            {% for key, label in header_data %}
+              {% set data_key = key %}
+              {% set cell_content = data_row[data_key] %}
+              <td>{{ cell_content | safe }}</td>
+            {% endfor %}
+          {% endfor %}
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endmacro %}

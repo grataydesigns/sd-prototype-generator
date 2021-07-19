@@ -1,0 +1,47 @@
+{% extends "documentation.nunjucks" %}
+
+{% set title = Icons %}
+{% set page_title = "Icons" %}
+
+{% block page_intro %}
+    <h2 class="sd-heading-level-2">Icon library</h2>
+    <p>The Scalable Design System uses <a href="https://phosphoricons.com/">Phosphor Icons library</a>. It is a flexible icon family for interfaces, diagrams, presentations licensed under MIT terms. This system is using the filled style and it was modified for the purposes of this system.</p>
+    <a href="/sink-pages/components/icons.html">Click here to see all the icons in this project</a>
+{% endblock %}
+
+{% block page_content %}
+  <h3 class="sd-heading-level-2">Icon size</h3>
+  {% set headers = [
+      { name: 'Name' },
+      { value: 'Value' },
+      { usage: 'Usage' }
+    ]
+  %}
+
+{% set data = [
+    {
+      name: 'Icon S',
+      value: '16px' + component.icon(name="bell", class="sd-icon--sm"),
+      usage: 'buttons, dropdowns, inputs, accordions, select, tooltip triggers'
+    },
+    {
+      name: 'Icon M',
+      value: '20px' + component.icon(name="bell", class="sd-icon--md"),
+      usage: 'icon buttons, menu items, close (‘x’) icons'
+    },
+    {
+      name: 'Icon L',
+      value: '24px' + component.icon(name="bell", class="sd-icon--lg"),
+      usage: 'notifications'
+    }
+  ]
+%}
+
+{{ component.table(
+    headers=headers,
+    data=data,
+    column_widths=[33, 33, 33]
+  )
+}}
+
+{% endblock %}

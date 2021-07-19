@@ -1,0 +1,13 @@
+{% extends "base.nunjucks" %}
+
+{% set title = "Scalable Design Web Starter Kit"%}
+
+{% block body %}
+  {{ component.header() }}
+  <main>
+    <div class="sd-hero">
+      <h1 class="sd-hero__title">{{ title }}</h1>
+      <p class="sd-hero__subtitle">Speed up your prototyping workflow in the browser with this CSS, HTML, and JavaScript static generator</p>
+    </div>
+  </main>
+{% endblock %}
